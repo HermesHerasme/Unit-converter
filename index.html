@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <div class="entrada">
+           
+            <input type="number" id="value" placeholder="Enter a number" required>
+
+            <div>
+                <button id="convertBtn">Convert</button>
+            </div>
+        </div>
+   
+        <div class="selectContainer">
+            <div>
+                
+                <select id="fromUnit">
+                    <option value="none">none</option>
+                    <!-- Unidades de longitud -->
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Kilómetro (km)</option>
+                
+                    <!-- Unidades de masa -->
+                    <option value="mg">Miligramo (mg)</option>
+                    <option value="g">Gramo (g)</option>
+                    <option value="kg">Kilogramo (kg)</option>
+                    <option value="ton">Tonelada (ton)</option>
+                </select>
+            </div>
+            <p>to:</p>
+            <div cla>
+                
+                <select id="toUnit">
+                    <option value="none">none</option>
+                    <!-- Unidades de longitud -->
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Kilómetro (km)</option>
+                
+                    <!-- Unidades de masa -->
+                    <option value="mg">Miligramo (mg)</option>
+                    <option value="g">Gramo (g)</option>
+                    <option value="kg">Kilogramo (kg)</option>
+                    <option value="ton">Tonelada (ton)</option>
+                </select>
+            </div>
+        </div>
+   
+
+        <div >
+            
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
